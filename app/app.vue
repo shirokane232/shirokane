@@ -1,9 +1,9 @@
 <template>
-  <div class="h-screen w-screen bg-blue-900">
-    {{ temp }}
-  </div>
-  <div></div>
+  <NuxtLayout>
+    <NuxtPage></NuxtPage>
+  </NuxtLayout>
 </template>
 <script setup lang="js">
-  const temp = '123';
+  const colorMode = useColorMode();
+  colorMode.preference = 'dark';
 </script>

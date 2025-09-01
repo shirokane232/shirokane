@@ -1,0 +1,14 @@
+[
+  {
+    "name": "free-tier-services",
+    "icon": "material-symbols:star-outline-rounded"
+  },
+  {
+    "name": "threads-automation",
+    "icon": "mingcute:threads-line"
+  },
+  {
+    "name": "about",
+    "icon": "mdi:information-outline"
+  }
+]

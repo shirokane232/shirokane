@@ -14,6 +14,8 @@ export default withNuxt(
       // Example: Common Nuxt/Vue rules to customize
       'vue/multi-word-component-names': 'off', // Often disabled for Nuxt pages/layouts/components
       'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+      'vue/no-multiple-template-root': 'off',
+
       // 'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
 
       // You can add other Vue, TypeScript, or general ESLint linting rules
