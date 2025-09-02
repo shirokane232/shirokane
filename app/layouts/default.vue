@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import { LINKS, MENUS, SHORT_URLS_REVERSED, SUB_MENUS } from '~/constant/menu';
   const route = useRoute();
+  const config = useRuntimeConfig();
   const splited = route.fullPath.replace(/^\/|\/$/g, '').split('/');
   const selectedMenu = splited.length === 2 ? splited[0] : '';
   const selectedSubMenu = splited.length === 2 ? splited[1] : '';
@@ -11,13 +12,11 @@
     const currentLink = `/${selectedMenu}/${selectedSubMenu}`;
     const pageIndex = LINKS.indexOf(currentLink);
     if (pageIndex != 0) {
-      prevLink.value = LINKS[pageIndex - 1];
+      prevLink.value = `/${config.app.baseURL}${LINKS[pageIndex - 1]}`;
     }
     if (pageIndex != LINKS.length - 1) {
-      nextLink.value = LINKS[pageIndex + 1];
+      nextLink.value = `/${config.app.baseURL}${LINKS[pageIndex + 1]}`;
     }
-    console.log(prevLink);
-    console.log(nextLink);
   }
   const toggleDrawer = () => {
     isDrawerOpen.value = !isDrawerOpen.value;
@@ -26,7 +25,7 @@
   const shortUrl = ref('');
   if (hash) {
     const url = useRequestURL();
-    shortUrl.value = `${url.origin}/s/${hash}`;
+    shortUrl.value = `${url.origin}/${config.app.baseURL}/s/${hash}`;
   }
 </script>
 

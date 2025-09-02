@@ -5,10 +5,10 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   nitro: {
-    preset: 'static', // 明確指定靜態生成
+    preset: 'github_pages',
     prerender: {
-      crawlLinks: true, // 自動爬取內部連結以生成所有頁面
-      routes: ['/'], // 指定需要預渲染的路由
+      crawlLinks: true,
+      routes: ['/'],
     },
   },
   modules: [
