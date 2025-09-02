@@ -22,6 +22,7 @@ export default defineNuxtConfig({
   ],
   app: {
     baseURL: '/shirokane/',
+    buildAssetsDir: 'assets',
   },
   css: ['~/assets/css/main.css'],
   vite: {
