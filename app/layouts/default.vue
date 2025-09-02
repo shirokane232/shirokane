@@ -25,7 +25,7 @@
   const shortUrl = ref('');
   if (hash) {
     const url = useRequestURL();
-    shortUrl.value = `${url.origin}/${config.app.baseURL}/s/${hash}`;
+    shortUrl.value = `${url.origin}${config.app.baseURL}s/${hash}`;
   }
 </script>
 

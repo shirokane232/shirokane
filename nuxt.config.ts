@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   nitro: {
-    preset: 'github_pages',
+    preset: 'static',
     prerender: {
       crawlLinks: true,
       routes: ['/'],
