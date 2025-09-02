@@ -22,7 +22,7 @@
           <a
             v-for="item in props.items"
             :key="item"
-            :href="`/${config.app.baseURL}/${props.name}/${item}`"
+            :href="`${config.app.baseURL}${props.name}/${item}`"
           >
             <div
               class="hover:bg-accent/80 cursor-pointer rounded px-2 py-1"

@@ -12,10 +12,10 @@
     const currentLink = `/${selectedMenu}/${selectedSubMenu}`;
     const pageIndex = LINKS.indexOf(currentLink);
     if (pageIndex != 0) {
-      prevLink.value = `/${config.app.baseURL}${LINKS[pageIndex - 1]}`;
+      prevLink.value = `${config.app.baseURL}${LINKS[pageIndex - 1]}`.replace('//', '/');
     }
     if (pageIndex != LINKS.length - 1) {
-      nextLink.value = `/${config.app.baseURL}${LINKS[pageIndex + 1]}`;
+      nextLink.value = `${config.app.baseURL}${LINKS[pageIndex + 1]}`.replace('//', '/');
     }
   }
   const toggleDrawer = () => {
