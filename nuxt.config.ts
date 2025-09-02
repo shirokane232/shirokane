@@ -40,6 +40,8 @@ export default defineNuxtConfig({
     families: [{ name: 'Noto Serif TC', weights: [400, 700], provider: 'google' }],
   },
   i18n: {
+    baseUrl: 'https://shirokane232.github.io/shirokane/',
+    strategy: 'no_prefix',
     defaultLocale: 'zh-tw',
     locales: [{ code: 'zh-tw', name: 'zh-tw', file: 'zh-tw.json' }],
   },
