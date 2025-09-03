@@ -51,17 +51,9 @@ export default defineNuxtConfig({
     families: [{ name: 'Noto Serif TC', weights: [400, 700], provider: 'google' }],
   },
   i18n: {
-    baseUrl: 'https://shirokane232.github.io/shirokane/',
     strategy: 'no_prefix',
-    defaultLocale: 'zh-tw',
-    langDir: 'locales',
-    locales: [
-      {
-        code: 'zh-tw',
-        name: '繁體中文',
-        file: 'zh-tw.json',
-      },
-    ],
-    vueI18n: './i18n.config.ts',
+    defaultLocale: 'zh',
+    detectBrowserLanguage: false,
+    locales: [{ code: 'zh', language: 'zh-TW' }],
   },
 });
