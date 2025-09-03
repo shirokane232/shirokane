@@ -21,12 +21,15 @@
   const toggleDrawer = () => {
     isDrawerOpen.value = !isDrawerOpen.value;
   };
-  const hash = SHORT_URLS_REVERSED[route.path];
+  const hash = ref<string | undefined>(undefined);
   const shortUrl = ref('');
-  if (hash) {
-    const url = useRequestURL();
-    shortUrl.value = `${url.origin}${config.app.baseURL}s/${hash}`;
-  }
+  onMounted(() => {
+    hash.value = SHORT_URLS_REVERSED[route.path];
+    if (hash.value) {
+      const url = useRequestURL();
+      shortUrl.value = `${url.origin}${config.app.baseURL}s/${hash.value}`;
+    }
+  });
 </script>
 
 <template>
