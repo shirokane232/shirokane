@@ -23,6 +23,16 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/shirokane/',
     buildAssetsDir: 'assets',
+    head: {
+      title: '白金雜記', // default title
+      meta: [
+        { name: 'description', content: '數位乞丐｜免費服務狂熱者' },
+        { property: 'og:title', content: '白金雜記' },
+        { property: 'og:description', content: '數位乞丐｜免費服務狂熱者' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://shirokane232.github.io/shirokane/' },
+      ],
+    },
   },
   css: ['~/assets/css/main.css'],
   vite: {
@@ -40,10 +50,15 @@ export default defineNuxtConfig({
     families: [{ name: 'Noto Serif TC', weights: [400, 700], provider: 'google' }],
   },
   i18n: {
-    baseUrl: 'https://shirokane232.github.io/shirokane/',
     strategy: 'no_prefix',
     defaultLocale: 'zh-tw',
-    langDir: 'locales',
-    locales: [{ code: 'zh-tw', name: 'zh-tw', file: 'zh-tw.json' }],
+    locales: [
+      {
+        code: 'zh-tw',
+        name: '繁體中文',
+        files: ['zh-tw.json'],
+      },
+    ],
+    vueI18n: './i18n.config.ts',
   },
 });
