@@ -25,6 +25,7 @@ export default defineNuxtConfig({
     buildAssetsDir: 'assets',
     head: {
       title: '白金雜記', // default title
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
       meta: [
         { name: 'description', content: '數位乞丐｜免費服務狂熱者' },
         { property: 'og:title', content: '白金雜記' },
@@ -50,6 +51,7 @@ export default defineNuxtConfig({
     families: [{ name: 'Noto Serif TC', weights: [400, 700], provider: 'google' }],
   },
   i18n: {
+    baseUrl: 'https://shirokane232.github.io/shirokane/',
     strategy: 'no_prefix',
     defaultLocale: 'zh-tw',
     locales: [
