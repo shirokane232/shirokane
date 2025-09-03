@@ -46,7 +46,6 @@
         <!-- right -->
         <div>
           <ShadcnButton
-            v-if="shortUrl"
             variant="ghost"
             @click="
               () => {
@@ -54,7 +53,7 @@
               }
             "
           >
-            <Icon name="mdi:share-variant" />
+            <Icon name="mdi:share-variant" /> {{ hash }}
           </ShadcnButton>
         </div>
       </div>
