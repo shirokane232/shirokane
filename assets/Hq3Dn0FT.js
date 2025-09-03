@@ -1,0 +1,1 @@
+const e={legacy:!1,locale:"zh",fallbackLocale:"zh",messages:{zh:{"threads-automation":"Threads 自動化","refresh-access-token":"更新 Access Token",about:"關於",shirokane:"白金雜記","free-tier-services":"免費服務筆記","cloudflare-nuxt-backend":"Cloudflare 後端 (Nuxt)","access-threads-api":"Threads API 服務開通"}}};export{e as default};
