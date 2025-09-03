@@ -43,6 +43,7 @@ export default defineNuxtConfig({
     baseUrl: 'https://shirokane232.github.io/shirokane/',
     strategy: 'no_prefix',
     defaultLocale: 'zh-tw',
+    langDir: 'locales',
     locales: [{ code: 'zh-tw', name: 'zh-tw', file: 'zh-tw.json' }],
   },
 });
