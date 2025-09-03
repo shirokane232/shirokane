@@ -25,7 +25,7 @@ export default defineNuxtConfig({
     buildAssetsDir: 'assets',
     head: {
       title: '白金雜記', // default title
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/shirokane/favicon.ico' }],
       meta: [
         { name: 'description', content: '數位乞丐｜免費服務狂熱者' },
         { property: 'og:title', content: '白金雜記' },
@@ -54,11 +54,12 @@ export default defineNuxtConfig({
     baseUrl: 'https://shirokane232.github.io/shirokane/',
     strategy: 'no_prefix',
     defaultLocale: 'zh-tw',
+    langDir: 'locales',
     locales: [
       {
         code: 'zh-tw',
         name: '繁體中文',
-        files: ['zh-tw.json'],
+        file: 'zh-tw.json',
       },
     ],
     vueI18n: './i18n.config.ts',
