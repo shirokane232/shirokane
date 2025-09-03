@@ -66,7 +66,7 @@
   <ul>
     <li>
       <p>
-        參考<a href="/threads-automation/access-threads-api">上一篇</a>的 deployment
+        參考<a href="/shirokane/threads-automation/access-threads-api">上一篇</a>的 deployment
         流程，將response貼在secrets column裡面
       </p>
     </li>

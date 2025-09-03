@@ -69,7 +69,7 @@
   <ul>
     <li>
       開通自己的Github repository 並設定 Cloudflare Workers &#x26; Pages，詳細例子<a
-        href="/free-tier-services/cloudflare-nuxt-backend"
+        href="/shirokane/free-tier-services/cloudflare-nuxt-backend"
         >請看這</a
       >。
     </li>

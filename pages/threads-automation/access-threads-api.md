@@ -26,7 +26,7 @@
 
 ### Step 2: 設定重新導向回呼網址 (本例使用 Cloudflare)
 
-- 開通自己的Github repository 並設定 Cloudflare Workers & Pages，詳細例子[請看這](/free-tier-services/cloudflare-nuxt-backend)。
+- 開通自己的Github repository 並設定 Cloudflare Workers & Pages，詳細例子[請看這](/shirokane/free-tier-services/cloudflare-nuxt-backend)。
 - 在 [nuxt.config.ts](https://github.com/shirokane232/cf/blob/main/nuxt.config.ts) 加入下列變數：
   - Client ID -> runtimeConfig.public.threadsClientId
   - Redirect Path -> runtimeConfig.public.threadsRedirectPath

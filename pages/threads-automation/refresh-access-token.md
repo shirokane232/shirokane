@@ -33,7 +33,7 @@
 
 Threads API 授權流程需要一個長效的Token。Cloudflare 是一個快速且免費的託管平台，非常適合用來處理這個登入流程。
 
-- 參考[上一篇](/threads-automation/access-threads-api)的 deployment 流程，將response貼在secrets column裡面
+- 參考[上一篇](/shirokane/threads-automation/access-threads-api)的 deployment 流程，將response貼在secrets column裡面
 - 由於App Script用來送request的`UrlFetchApp`不接受太長的URL，於是我們使用一個proxy endpoint幫忙轉向：
 
   ```
