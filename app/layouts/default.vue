@@ -24,8 +24,11 @@
   const hash = ref<string | undefined>(undefined);
   const shortUrl = ref('');
   onMounted(() => {
-    console.log(route.path);
-    hash.value = SHORT_URLS_REVERSED[route.path];
+    let path = route.path;
+    if (path.endsWith('/')) {
+      path = path.slice(0, -1);
+    }
+    hash.value = SHORT_URLS_REVERSED[path];
     if (hash.value) {
       const url = useRequestURL();
       shortUrl.value = `${url.origin}${config.app.baseURL}s/${hash.value}`;
