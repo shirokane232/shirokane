@@ -21,8 +21,8 @@ export const SHORT_URLS = {
   '0fd0584f': '/about/shirokane',
 } as Record<string, string>;
 export const SHORT_URLS_REVERSED = {
-  '/free-tier-services/cloudflare-nuxt-backend': '951de663',
-  '/threads-automation/access-threads-api': '31ebf6b1',
-  '/threads-automation/refresh-access-token': 'c0e2d79d',
-  '/about/shirokane': '0fd0584f',
+  '/free-tier-services/cloudflare-nuxt-backend/': '951de663',
+  '/threads-automation/access-threads-api/': '31ebf6b1',
+  '/threads-automation/refresh-access-token/': 'c0e2d79d',
+  '/about/shirokane/': '0fd0584f',
 } as Record<string, string>;

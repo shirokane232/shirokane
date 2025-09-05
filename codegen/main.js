@@ -98,7 +98,7 @@ async function main() {
       const urlHashed = await getHash(url);
       links.push(url);
       short_urls[urlHashed] = url;
-      short_urls_reversed[url] = urlHashed;
+      short_urls_reversed[`${url}/`] = urlHashed;
       flush(['app', 'pages', menuKey, filename], `<template>${htmlString}</template>\n${css}`);
     }
   }
