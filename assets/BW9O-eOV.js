@@ -1,1 +1,0 @@
-import{S as o}from"./CW2TFZOr.js";import{d as a,F as n,q as s,y as r,z as c}from"./yIv7Uklc.js";const d=a({__name:"[id]",setup(p){const t=n().path.split("/"),e=t[t.length-1];return e&&o[e]?s(o[e]):s("/"),(_,m)=>(c(),r("div"))}});export{d as default};
