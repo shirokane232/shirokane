@@ -29,6 +29,7 @@
       path = path.slice(0, -1);
     }
     hash.value = SHORT_URLS_REVERSED[path];
+    console.log(hash.value);
     if (hash.value) {
       const url = useRequestURL();
       shortUrl.value = `${url.origin}${config.app.baseURL}s/${hash.value}`;
